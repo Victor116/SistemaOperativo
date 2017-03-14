@@ -1,0 +1,386 @@
+body, div{
+	margin: 0px;
+	font-family: Corbel;
+}
+
+figure{
+	margin: 0px;
+}
+
+h3{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	padding-left: 1%;
+}
+
+li{
+	float: left;
+	display: block;
+	padding-right: 1%;
+}
+
+p{
+	margin-left: 10px;
+}
+
+hr{
+	width: 75%;
+}
+input{
+	padding-bottom: 4px;
+}
+
+.tamanoW7{
+	width: 1364px;
+	height: 700px;
+	background: url(img/w7.jpeg);
+	display: inline-block
+}
+
+.tamanoSection{
+	width: 100vw;
+	height: 630px;
+	overflow: hidden;
+}
+
+.barraInicio{/*Barra de inicio gris donde estan los iconos*/
+	width: 1364px;
+	height: 54px;
+	box-shadow: 0px 20px 100px 2px gray inset;
+	bottom: 10px;
+}
+
+.inicio{/*Icono de Windows*/
+	width: 50px;
+	height: 50px;
+}
+
+.inicio:hover{
+	box-shadow: 0px 20px 100px 2px black inset;/*Sombrita de Windows*/
+	border-radius: 45%;
+}
+
+.tamano_menu{/*Tamaño de los iconos*/
+	width: 51px;
+	height: 47px;
+}
+
+.tamano_menu:hover{
+	box-shadow: 0px 20px 100px 2px black inset;/*Sombrita del menu*/
+}
+
+ul li ul{
+	display: none;
+	width: 450px;/*Tamaño del menu despegable*/
+	position: absolute;
+	background: linear-gradient(#97AFC7,#697785,#535D67,#535D67,#697785,#ACBED9);
+	bottom: 55px;/*Posicionar el menu en cierta pocicion*/
+}
+
+ul li:hover > ul{
+	display: block;
+}
+
+ul li ul li{
+	position: relative;
+	width: 200px;/*Tamaño de cada li dentro del menu despegable*/
+	padding-top: 2%;
+	padding-left: 2%;
+}
+
+.izquierdomenu{
+	background: white;
+	border-radius: 3%;
+	margin-top: 1%;
+}
+
+.derechomenu{
+	position: center;
+	border-radius: 3%;
+}
+
+.nav{
+	border-radius: 3%;
+}
+
+.azulito:hover{
+	box-shadow: 0px 20px 100px 2px #117ADA inset;
+}
+
+.grisesito:hover{
+	box-shadow: 0px 0px 1px 1px black;
+	background: linear-gradient(#97AFC7,#535D67,#697785,#ACBED9);
+}
+
+.x:hover{
+	border-radius: 3px;
+	background: linear-gradient(#97AFC7,#535D67,#697785,#ACBED9);
+}
+
+.xx{
+	padding-left: 5px;
+	padding-right: 3px;
+}
+.x{
+	border-radius: 2px;
+	color: white;
+	box-shadow: 0px 0px 1px 1px black;
+	display: inline-block;
+}
+.apagar{
+	display: inline-block;
+}
+.img{
+	width: 195px;
+	height: 100px;
+	color: white;
+    border: 4px solid gray;
+    border-radius: 8px;
+}
+
+.bordea{
+  	padding-top: 10px;
+}
+.bordeabajo{
+	padding-bottom: 10px;
+}
+
+.letrasblancas{
+	color: white;
+}
+
+.figura{
+	width: 30px;
+	height: 30px;
+}
+
+.diferente{
+	width: 0%;
+}
+
+#calculadora_chida{
+	display: none;
+	width: 270px;
+	height: 225px;
+	margin: 0px;
+	background: linear-gradient(cyan, black, orange); 
+}
+
+.tamano_barraCerrar{
+	width: 85px;
+	height: 25px;
+}
+
+.text_archivo{
+	width: 305px;
+	height: 274px;
+	margin-top: 5px;
+}
+.boton_archivo{
+	margin-top: 3px;
+	color: black;
+    text-align: center;
+    font-size: 16px;
+    width: auto;
+    height: 25px;
+    border: 4px;
+}
+.boton_archivo:hover{
+	box-shadow: 0px 20px 100px 2px gray inset;
+}
+.boton_calculadora{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    background-color: #88d24c;
+    border-radius: 15px;
+    width: 40px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.boton_calculadora:hover {
+	border-color: hsl(40,100%,50%);
+    border-radius: 15px;
+}
+
+.text-calculadora{
+	margin-left: 10%;
+	width: 200px;
+}
+
+.posicion_barraCerrar{
+	padding-left: 96px;
+	right: 0px;
+}
+.posicion_barraCerrar2{
+	padding-left: 295px;
+	right: 0px;
+}
+.posicion_barraCerrar3{
+	padding-left: 645px;
+	right: 0px;
+	background: #117ADA;
+}
+.borrar{
+	width: 92px;
+}
+
+.tamanoCreditos{
+	display: none;
+	margin-left: 100px;
+	top: 50px;
+	padding: 8px;
+	background: linear-gradient(black,cyan,pink,black, gray, black, green, orange,#535D67, black); 
+	box-shadow: 0px 10px 50px 20px white inset;
+	font-family: Corbel;
+    text-align: center;
+    font-size: 16px;
+    color: #1E90FF;
+    text-shadow: 1px 1px 5px gray;
+    border: 4px solid gray;
+    position: absolute;
+}
+
+.logotip{
+	width: 250px;
+	height: 100px;
+}
+
+.notas{
+	position: absolute;
+	left: 450px;
+	top: 300px;
+	border: 3px solid black;
+	width: 740px;
+	background: black;
+	padding: 4px;
+	display: none;
+}
+.notas1{
+	position: absolute;
+	left: 450px;
+	top: 300px;
+	height: 600px;
+	border: 3px solid black;
+	width: 740px;
+	background: black;
+	padding: 4px;
+	display: none;
+}
+.ggysy{
+	margin: 0px;
+	height: 0px;
+	width: 180px;
+	height: 25px;
+	display: inline-block;
+}
+.administrar{
+	width:  650px;
+	height: 450px;
+	background: linear-gradient(to right, #E7EEF6, #56D4FA);
+	padding: 10px;
+	display: none;
+}
+.administradatos{
+	width: 650px;
+	height: 420px;
+	background: white;
+}
+.pad{
+	display: inline-block;
+	margin-left: 285px;
+}
+
+.listausuario{
+	background: #424242;
+	width: 225px;
+	height: 410px;
+	padding: 5px;
+	overflow: scroll;
+	display: inline-block;
+}
+.haceroperaciones{
+	width: 365px;
+	height: 420px;
+	display: inline-block;
+	position: absolute;
+	padding: 15px;
+	padding-top: 0px;
+}
+
+.titulouser{
+	margin: 0px;
+	padding: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.espacio-formulario{
+	margin-left: 10px;
+}
+
+.textomaschido{
+	margin-top: 10px;
+	min-width: 240px;
+	max-width: 240px;
+	height: 40px;
+	resize: none;
+}
+.textochido{
+	width: 140px;
+	max-width: 140px;
+	height: 40px;
+}
+
+.tamanoBlocNotas{
+	width:  650px;
+	height: 450px;
+	background: linear-gradient(to right, #E7EEF6, #56D4FA);
+	padding: 10px;
+	display: none;
+}
+
+.wealistaArchivos{
+	display: inline-block;
+	width: 150px;
+	height: 20px;
+
+}
+.weaespaciadora{
+	display: inline-block;
+}
+.menutamano23{
+	width: 250px;
+	height: 500px;
+	background: gray;
+	padding: 5px;
+	display: inline-block
+}
+.displayyy{
+	display: inline-block;
+	position: absolute;
+	padding: 5px;
+}
+.displayyy2{
+	display: inline-block;
+	position: absolute;
+	padding: 5px;
+	top: 0px;
+	margin-left: 290px;
+}
+.text_archivo2{
+	width: 425px;
+	height: 145px;
+	margin-top: 5px;
+	resize: none;
+}
+#a13{
+	display: none;
+}

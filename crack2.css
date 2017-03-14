@@ -1,0 +1,46 @@
+*{
+	font-family: corbel, verdana, arial;
+	color: #1E90FF;
+	margin: 0px;	
+	padding: 0px;
+}
+
+input{
+	border-radius: 10px;
+	width: auto;
+	padding: 4px;
+}
+
+body{
+	background: url(img/daftpun.jpg);
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+h2{
+	display: inline-block;
+	text-shadow: 1px 1px 3px black;
+}
+
+.formulario{
+	margin-top: 225px;
+	margin-left: 500px;
+	box-shadow: 0px 25px 100px 30px gray inset;
+	display: inline-block;
+	padding: 15px;
+}
+
+.batibatman{
+	width: 150px;
+	height: 150px;
+	padding-left: 66px;
+}
+.user{
+	margin-left: 35px;
+	padding-left: 7px;
+}
+
+.ingresa{
+	margin-left: 108px;
+}

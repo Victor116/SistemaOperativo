@@ -1,0 +1,7 @@
+Administrador: Paulina210914
+Contraseña: #accio
+
+Principal index.php
+User cualquiera index2.php
+Administrador index3.php
+
