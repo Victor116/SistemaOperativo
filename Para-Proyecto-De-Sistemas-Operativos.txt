@@ -1,0 +1,10 @@
+-Escritorio (con iconos).				Gil
+-Reproductor Multimedia (Mp3, Mp4, Avi).		Cordova
+-Visor de imágenes.					Cordova
+-Bloc de Notas.						Gil
+-Explorador de Internet.				Angel
+-Paint (que guarde).					Angel
+-Simular linea de comandos.				Cordova
+-Calendario.						Angel
+*Explorador de archivos.				Gil
+
