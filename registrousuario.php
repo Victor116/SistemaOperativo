@@ -13,7 +13,6 @@
 			echo '<script language="javascript">alert("Atencion, ya existe un usuario con ese nombre, eliga otro");</script> ';
 			echo "<script>location.href='index3.php'</script>";
 		}else{
-			//require("database.php");
 			mysql_query("INSERT INTO login VALUES('$ususuario','$contraseña')");
 			echo ' <script language="javascript">alert("Usuario registrado con éxito");</script>';
 			echo "<script>location.href='index3.php'</script>";

@@ -4,6 +4,7 @@ $(document).ready(function(){
     $('#datos').draggable({containment: "parent"});
     $('#administradorchido').draggable({containment: "parent"});
     $('#bblocknotas').draggable({containment: "parent"});
+    $('#gestorDeNotas').draggable({containment: "parent"});
 });
 
 function ocultar(){
@@ -35,6 +36,12 @@ function ocultar5(){
 
 function mostrar5(){
 	document.getElementById('notas').style.display = 'block';}
+
+function ocultar6(){
+	$('#gestorDeNotas').fadeToggle(1000);}
+
+function mostrar6(){
+document.getElementById('gestorDeNotas').style.display = 'block';}
 
 function agregarnumero(valor, cantidadEnPantalla){
 	if (valor.value == null || valor.value == 0){

@@ -307,7 +307,7 @@ ul li ul li{
 	display: inline-block;
 }
 .haceroperaciones{
-	width: 365px;
+	width: 665px;
 	height: 420px;
 	display: inline-block;
 	position: absolute;
@@ -340,7 +340,7 @@ ul li ul li{
 }
 
 .tamanoBlocNotas{
-	width:  650px;
+	width:  850px;
 	height: 450px;
 	background: linear-gradient(to right, #E7EEF6, #56D4FA);
 	padding: 10px;

@@ -1,0 +1,11 @@
+.newgestornotas{
+	width:  850px;
+	height: 500px;
+	background: linear-gradient(to right, #E7EEF6, #56D4FA);
+	padding: 10px;
+	display: block;
+}
+.posicion_barraCerrar4{
+	padding-left: 695px;
+	right: 0px;
+}

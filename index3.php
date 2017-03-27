@@ -13,7 +13,12 @@
 	<link rel="stylesheet" href="crack.css">
 	<link rel="shortcut icon" href="img/Inicio.ico">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript"></script>    
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript"></script>   
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
 	<script src="js/jquery-2.2.1.js"></script>
 	<script src="js/external/jquery.js"></script>
@@ -31,13 +36,13 @@
 		<div id='calculadora_chida'></div>
 
 		<div class="administrar" id='administradorchido'>
-				<p class="ggysy"> Administrar</p>
-				<figure class="posicion_barraCerrar" style="display: inline-block">
-					<img class="tamano_barraCerrar pad" src="img/barra_cerrar.jpg" usemap="#botones">
-					<map name="botones">
-						<area shape="rect" coords="46,0,85,25" alt="Minimizar" onclick='ocultar3()'>
-					</map>
-				</figure>
+			<p class="ggysy"> Administrar</p>
+			<figure class="posicion_barraCerrar" style="display: inline-block">
+				<img class="tamano_barraCerrar pad" src="img/barra_cerrar.jpg" usemap="#botones">
+				<map name="botones">
+					<area shape="rect" coords="46,0,85,25" alt="Minimizar" onclick='ocultar3()'>
+				</map>
+			</figure>
 			<div class="administradatos">
 				<div class="listausuario">
 					<?php 
@@ -54,7 +59,7 @@
 						do{
 							if($fila['user'] == "Paulina210914"){
 							} else {
-								echo "<p class='useradministrado'>".$fila[0]."</p>";
+								echo "<p class='useradministrado'><i class='material-icons'>assignment_ind</i>".$fila[0]."</p>";
 							}
 						}while ($fila = mysqli_fetch_array($resultados));
 					?>
@@ -123,15 +128,14 @@
 						<div class="izquierdomenu">
 							<hr class="diferente">
 							<p class="azulito borde"><img src="img/League-of-Legends.ico" class="figura">League of Legends</p>
-							<p class="azulito"><img src="img/calculadora.ico" class="figura">Calculadora</p>
-							<p class="azulito"><img src="img/notes_128.ico" class="figura">Notas</p>
+							<p class="azulito"><img src="img/calculadora.ico" class="figura">	Calculadora</p>
+							<p class="azulito"><img src="img/notes_128.ico" class="figura">		Notas</p>
 							<hr>
-							<p class="azulito"><img src="img/bloc_de_notas.ico" class="figura">Block de Notas</p>
-							<p class="azulito"><img src="img/icon109.ico" class="figura">CodeBlocks</p>
+							<p class="azulito"><img src="img/bloc_de_notas.ico" class="figura">	Block de Notas</p>
+							<p class="azulito"><img src="img/icon109.ico" class="figura">		CodeBlocks</p>
 							<p class="azulito"><img src="img/Sublime_Text_Logo.ico" class="figura">Sublime Text</p>
-							<p class="azulito"><img src="img/adobe.ico" class="figura">Adobe Reader</p>
+							<p class="azulito"><img src="img/adobe.ico" class="figura">			Adobe Reader</p>
 							<p class="azulito bordeajo"><img src="img/M_W_2013.ico" class="figura">Word 2013</p>
-							
 						</div>
 					</li>
 					<li>
