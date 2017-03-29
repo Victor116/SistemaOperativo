@@ -384,3 +384,8 @@ ul li ul li{
 #a13{
 	display: none;
 }
+/*webbrowser*/
+.webbrowser{
+	float: right;
+}
+/*END webbrowser*/

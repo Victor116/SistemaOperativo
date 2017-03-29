@@ -10,7 +10,9 @@ function ocultar(){
 $('#calculadora_chida').fadeToggle(1500);}
 
 function mostrar(){
-document.getElementById('calculadora_chida').style.display = 'block';}
+document.getElementById('calculadora_chida').style.display = 'block';
+}
+
 
 function ocultar2(){
 $('#datos').fadeToggle(1500);}
