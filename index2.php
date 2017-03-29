@@ -11,9 +11,14 @@
 	<meta charset="UTF-8">
 	<title>Sistema Operativo</title>
 	<link rel="stylesheet" href="crack.css">
+	<link rel="stylesheet" href="mortal.css">
 	<link rel="shortcut icon" href="img/Inicio.ico">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript"></script>    
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
 	<script src="js/jquery-2.2.1.js"></script>
 	<script src="js/external/jquery.js"></script>
@@ -80,22 +85,24 @@
 
 		<div class="tamanoBlocNotas" id='bblocknotas'>
 			<p class="ggysy">Gestor de Bloc de Notas</p>
-				<figure class="posicion_barraCerrar pad" style="display: inline-block">
-					<img class="tamano_barraCerrar" src="img/barra_cerrar.jpg" usemap="#cerrarBlocNotas">
-					<map name="cerrarBlocNotas">
-						<area shape="rect" coords="46,0,85,25" alt="Minimizar" onclick='ocultar4()'>
-					</map>
-				</figure>
+			<figure class="posicion_barraCerrar pad" style="display: inline-block">
+				<img class="tamano_barraCerrar" src="img/barra_cerrar.jpg" usemap="#cerrarBlocNotas">
+				<map name="cerrarBlocNotas">
+					<area shape="rect" coords="46,0,85,25" alt="Minimizar" onclick='ocultar4()'>
+				</map>
+			</figure>
 			<div class="administradatos">
 				<div class="listausuario">
 					<?php
 						$quienes = $_SESSION['user'];
 						$directorio = opendir($quienes."/"); //ruta actual
-						while ($archivo = readdir($directorio)){ //obtenemos un archivo y luego otro sucesivamente
-							if(is_dir($archivo)){//verificamos si es o no un directorio
-							    // echo "[".$archivo . "]<br>"; //de ser un directorio lo envolvemos entre corchetes
-							} else {
-							    echo "<p>".$archivo . "</p>";
+						if($directorio){
+							while ($archivo = readdir($directorio)){
+								if(is_dir($archivo)){//verificamos si es o no un directorio
+								    // echo "<p>i</p>";
+								} else {
+								    echo "<p><i class='material-icons'>book</i>".$archivo . "</p>";
+								}
 							}
 						}
 					?>
@@ -122,17 +129,31 @@
 						<input type="file" id='filefile' value="Abrir con el Editor" onclick='abrirEditor()'>
 					</div>
 				</div>
-				</div>
+			</div>
 		</div>
 
+		<!-- <div class="newgestornotas" id="gestorDeNotas">
+			<p class="ggysy">Gestor de Bloc de Notas</p>
+			<figure class="posicion_barraCerrar4 pad" style="display: inline-block">
+				<img class="tamano_barraCerrar" src="img/barra_cerrar.jpg" usemap="#cerrarwea">
+				<map name="cerrarwea">
+					<area shape="rect" coords="46,0,85,25" alt="Minimizar" onclick='ocultar6()'>
+				</map>
+			</figure>
+			<div>
+				mamadas
+			</div>
+		</div> -->
+
+
 		<div class="administrar" id='administradorchido'>
-				<p class="ggysy"> Notas</p>
-				<figure class="posicion_barraCerrar" style="display: inline-block">
-					<img class="tamano_barraCerrar pad" src="img/barra_cerrar.jpg" usemap="#botonesss">
-					<map name="botonesss">
-						<area shape="rect" coords="46,0,85,25" alt="Minimizar" onclick='ocultar3()'>
-					</map>
-				</figure>
+			<p class="ggysy"> Notas</p>
+			<figure class="posicion_barraCerrar" style="display: inline-block">
+				<img class="tamano_barraCerrar pad" src="img/barra_cerrar.jpg" usemap="#botonesss">
+				<map name="botonesss">
+					<area shape="rect" coords="46,0,85,25" alt="Minimizar" onclick='ocultar3()'>
+				</map>
+			</figure>
 			<div class="administradatos">
 				<div class="listausuario">
 					<?php 
@@ -295,8 +316,8 @@
 				</a> </li>
 			<li>
 				<audio autoplay>
-					<source src="horse.ogg" type="audio/ogg">
-					<source src="w7.mp3" type="audio/mpeg">		
+					<!-- <source src="horse.ogg" type="audio/ogg">
+					<source src="w7.mp3" type="audio/mpeg">	 -->	
 				</audio>
 			</li>
 		</ul>

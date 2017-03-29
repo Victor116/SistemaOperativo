@@ -2,10 +2,10 @@
 	session_start();
 	$usuario = $_SESSION['user'];
 	$nombreArchivo = $_POST['nomArchivo'];
-	$textodelArchivo = $_POST['textoArchivo']
+	$textodelArchivo = $_POST['textoArchivo'];
 	
 	function creandoDirectorio($nombreDirectorio){
-		 mkdir("$nombreDirectorio");
+		mkdir("$nombreDirectorio");
 	}
 
 	function creandoArchivo($nameArchivo, $qHara, $textodelArchivoenido){
@@ -26,7 +26,7 @@
 				} else {
 					@creandoDirectorio($nombreDirectorio);
 					creandoArchivo($nombreArchivo,$instruccion,$textodelArchivoenido);
-					echo "<script>alert('Listo se creo lince')</script>";
+					// echo "<script>alert('Listo se creo lince')</script>";
 					echo "<script>location.href='index2.php'</script>";
 			    }
 			} else {
